@@ -26,6 +26,28 @@ Font
 	--font-weight-regular: 400;
 	--font-weight-semi-bold: 600;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--color-neutral-very-dark-blue-bg);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+p,
+span {
+	color: var(--color-primary-soft-blue);
+}
+
 }
 
 /* views
