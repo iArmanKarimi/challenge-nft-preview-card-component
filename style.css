@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
 /* 
 Primary
 - Soft blue: hsl(215, 51%, 70%)
@@ -15,7 +17,7 @@ Font
 */
 :root {
 	font-size: 18px;
-	font-family: 'Outfit', sans-serif;
+	font-family: "Outfit", sans-serif;
 	font-weight: var(--font-weight-regular);
 	--color-primary-soft-blue: hsl(215, 51%, 70%);
 	--color-primary-cyan: hsl(178, 100%, 50%);
@@ -26,6 +28,7 @@ Font
 	--font-weight-light: 300;
 	--font-weight-regular: 400;
 	--font-weight-semi-bold: 600;
+	--spacing-inline: 8px;
 }
 
 * {
@@ -49,11 +52,87 @@ span {
 	color: var(--color-primary-soft-blue);
 }
 
+.card {
+	width: 18rem;
+	padding: 1.25rem;
+	box-shadow: 0 5px 8px hsla(0, 0%, 0%, 0.1);
+	background-color: var(--color-neutral-very-dark-blue-bg-card);
+	border-radius: 15px;
+}
+
+.card > img:first-child {
+	width: 100%;
+	border-radius: inherit;
+}
+
+.card .title {
+	margin: 0.8rem 0;
+	font-size: 1.2rem;
+	color: var(--color-neutral-white);
+	font-weight: var(--font-weight-semi-bold);
+}
+
+.card .description {
+	line-height: 1.5;
+	font-weight: var(--font-weight-light);
+}
+
+.card .price-and-time {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+
+.card img.ethereum {
+}
+
+.card .price {
+	margin-left: var(--spacing-inline);
+	color: var(--color-primary-cyan);
+}
+
+.card img.clock {
+	margin-left: auto;
+	margin-right: var(--spacing-inline);
+}
+
+.card .time-left {
+	align-items: center;
+}
+
+.card hr {
+	border: 0;
+	height: 1px;
+	margin: 1rem 0;
+	display: block;
+	border-top: 1px solid hsla(0, 0%, 100%, 0.125);
+}
+
+/* footer */
+.card footer {
+	display: flex;
+	align-items: center;
+}
+.card footer img.avatar {
+	width: 2rem;
+	border-width: 1px;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: var(--color-neutral-white);
+	vertical-align: middle;
+}
+.card footer > span.designer {
+	margin-left: 1rem;
+}
+.card footer span.designer-name {
+	color: var(--color-neutral-white);
 }
 
 /* views
 - Mobile: 375px
 - Desktop: 1440px
 */
-@media screen and (min-wdith: 376px) {
+@media screen and (max-wdith: 376px) {
+	/* TODO lower scale for mobile */
 }
