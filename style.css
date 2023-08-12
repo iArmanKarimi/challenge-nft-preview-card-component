@@ -15,14 +15,17 @@ Font
 */
 :root {
 	font-size: 18px;
+	font-family: 'Outfit', sans-serif;
 	--color-primary-soft-blue: hsl(215, 51%, 70%);
 	--color-primary-cyan: hsl(178, 100%, 50%);
 	--color-neutral-white: hsl(0, 0%, 100%);
 	--color-neutral-very-dark-blue-bg: hsl(217, 54%, 11%);
 	--color-neutral-very-dark-blue-bg-card: hsl(216, 50%, 16%);
 	--color-neutral-very-dark-blue-line: hsl(215, 32%, 27%);
-	--font-family-outfit: ;
-	/* --font-weight- */
+	--font-weight-light: 300;
+	--font-weight-regular: 400;
+	--font-weight-semi-bold: 600;
+}
 }
 
 /* views
