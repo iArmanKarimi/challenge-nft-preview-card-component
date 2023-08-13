@@ -84,12 +84,10 @@ span {
 	align-content: center;
 }
 
-.card img.ethereum {
-}
-
 .card .price {
 	margin-left: var(--spacing-inline);
 	color: var(--color-primary-cyan);
+	font-weight: var(--font-weight-semi-bold);
 }
 
 .card img.clock {
